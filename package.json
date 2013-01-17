@@ -1,24 +1,19 @@
 {
-  "name": "drone-joystick",
-  "description": "Control AR.Drones using any SDL-compatible Joystick (PS3 Sixaxis, etc.)",
+  "name": "drone-flight-recorder",
+  "description": "Fly your AR.Drone with a ps3 controller and record its flight, then play it back.",
   "keywords": [
     "sdl",
     "AR.Drone",
     "ar",
     "drone",
     "controller",
-    "joystick",
-    "ps3",
-    "sixaxis"
+    "ps3"
   ],
   "version": "0.1.0",
-  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
+  "author": "Adam Magaluk <AdamMagaluk@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/TooTallNate/node-drone-joystick.git"
-  },
-  "bin": {
-    "drone-joystick": "bin/drone-joystick"
+    "url": "git://github.com/detnodecopter/flight-recorder.adammagaluk"
   },
   "dependencies": {
     "ar-drone": "~0.0.5",

@@ -1,29 +1,28 @@
-node-drone-joystick
+drone-flight-recorder
 ===================
 
-Control your Parrot AR.Drone using any SDL-compatible controller. Just write
-simple JSON configuration files.
+Control your Parrot AR.Drone with a Playstation 3 controller using Nathan Rajlich's ps3/drone code and record all control commands sent to the drone. When done playback that flight again and again.
 
-To see a video of this program in action:
-http://www.youtube.com/watch?v=g2ZEBCeQkuc
+Nathan's Repository
+https://github.com/TooTallNate/node-drone-joystick
 
-Installation
-------------
+Recording
+===================
 
-You can install with `npm`:
+node drone-joystick.js
 
-``` bash
-$ npm install -g drone-joystick
-```
+Takeoff by pressing Triangle by default on the controller, that starts the recording processs.
+Land by pressing X, after pressing X the flight is dumped to a file in the same directory named "flight-TIMESTAMP.json"
 
-"config" files
---------------
+Playback
+===================
 
-"config" JSON files are defined in the `./config` directory.
+Set your drone in the same starting position, then run: 
 
-#### ps3 config
+node drone-joystick.js -p <file.json>
 
-The `ps3` config maps to a Playstation 3 controller. See the figure below for the
-specifics:
+The drone should automaticly start taking off and flying.
 
-![](http://f.cl.ly/items/1N2H1h2v461z1s293U1u/ps3.png)
+Note: The joysticks on the controller are disabled during playback, however the land/takeoff butttons will work for those emergancy situations.
+
+Have fun!
